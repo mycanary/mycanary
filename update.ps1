@@ -7,5 +7,5 @@ While ($True)
     git add .;
     git commit -m "update angular" -m "angular {cli, cdk, material, localize}, and rxjs";
     git push origin master;
-    Start-Sleep -Seconds 60;
+    Start-Sleep -Seconds 3600;
 }
