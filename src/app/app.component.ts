@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { LoadingService } from './loading.service';
-import { LoggerService } from './logger.service';
 
 @Component({
   selector: 'app-root',
@@ -10,14 +8,8 @@ import { LoggerService } from './logger.service';
 export class AppComponent implements OnInit {
   title = 'ReactiveMaterial';
 
-  constructor(
-    private loading: LoadingService,
-    private logger: LoggerService
-  ) { }
+  constructor() { }
 
   ngOnInit(): void {
-    this.loading.turnLoadingOn();
-    this.logger.logObject(this);
-    this.logger.warn(this.title);
   }
 }
