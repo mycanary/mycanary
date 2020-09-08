@@ -1,6 +1,6 @@
 While ($True)
 {
-    date;
+    Get-Date;
     git stash --include-untracked;
     yarn run ng update;
     yarn run ng update @angular/core @angular/cli @angular/cdk @angular/material @angular/localize rxjs;
