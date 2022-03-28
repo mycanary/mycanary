@@ -23,7 +23,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm install -g yarn
-    - run: yarn install --frozen-lockfile
+    - run: yarn install
     - run: yarn run ng update;
     - run: yarn run ng update @angular/core @angular/cli @angular/cdk @angular/material @angular/localize;
     - run: git config user.name "Linus Torvalds";
