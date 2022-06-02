@@ -124,7 +124,6 @@
       }
     }
   },
-  "defaultProject": "mycanary",
   "cli": {
     "analytics": "277a0aa1-5411-4ce0-8d34-f92b346013e5"
   }
