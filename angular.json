@@ -120,11 +120,23 @@
               "devServerTarget": "mycanary:serve:production"
             }
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
         }
       }
     }
   },
   "cli": {
-    "analytics": "277a0aa1-5411-4ce0-8d34-f92b346013e5"
+    "analytics": "277a0aa1-5411-4ce0-8d34-f92b346013e5",
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ]
   }
 }
