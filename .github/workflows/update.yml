@@ -21,14 +21,14 @@ jobs:
     - run: npm install -g yarn
     - run: yarn install
     - run: yarn run ng update;
-    - run: yarn run ng update @angular/core @angular/cli @angular/material @angular/localize;
+    - run: yarn run ng update @angular/core @angular/cli @angular/material @angular/localize @angular-eslint/schematics;
     - run: git config user.name "Linus Torvalds";
       if: always()
     - run: git config user.email "torvalds@linux-foundation.org";
       if: always()
     - run: git add .;
       if: always()
-    - run: git commit -m "update angular" -m "angular {cli, material, localize}, and rxjs";
+    - run: git commit -m "update angular" -m "angular {cli, material, localize, @angular-eslint/schematics}";
       if: always()
     - run: git pull --rebase --strategy-option=theirs;
       if: always()
