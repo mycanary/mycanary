@@ -77,18 +77,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "mycanary:build"
+            "buildTarget": "mycanary:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "mycanary:build:production"
+              "buildTarget": "mycanary:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "mycanary:build"
+            "buildTarget": "mycanary:build"
           }
         },
         "test": {
