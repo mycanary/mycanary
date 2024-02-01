@@ -281,9 +281,9 @@
     yargs "^17.2.1"
 
 "@angular/material@^16.2.0":
-  version "16.2.13"
-  resolved "https://registry.yarnpkg.com/@angular/material/-/material-16.2.13.tgz#4edcf587d7c4f7abcd00ff51a5dbfbb4f14f3b70"
-  integrity sha512-7gP9KlaVZGpCeJlwXlD7puTiafAHYAbgYoODEQLbPCiAL/woFFDvM+DCdos7lmCBMyt6+10bkrPvz8cVfyTfQg==
+  version "16.2.14"
+  resolved "https://registry.yarnpkg.com/@angular/material/-/material-16.2.14.tgz#4db0c7d14d3d6ac6c8dac83dced0fb8a030b3b49"
+  integrity sha512-zQIxUb23elPfiIvddqkIDYqQhAHa9ZwMblfbv+ug8bxr4D0Dw360jIarxCgMjAcLj7Ccl3GBqZMUnVeM6cjthw==
   dependencies:
     "@material/animation" "15.0.0-canary.bc9ae6c9c.0"
     "@material/auto-init" "15.0.0-canary.bc9ae6c9c.0"
