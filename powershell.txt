@@ -1,0 +1,280 @@
+PowerShell 7.4.2
+PS C:\Users\kushal>
+PS C:\Users\kushal>
+PS C:\Users\kushal> cd "C:\Users\kushal\src\angular\mycanary\"; date; yarn; date; yarn run ng build  --configuration production; date; yarn run ng update; date;
+
+Monday, June 3, 2024 11:21:41 AM
+yarn install v1.22.21
+[1/4] Resolving packages...
+success Already up-to-date.
+Done in 0.41s.
+Monday, June 3, 2024 11:21:43 AM
+yarn run v1.22.21
+$ ng build --configuration production
+✔ Browser application bundle generation complete.
+✔ Copying assets complete.
+✔ Index html generation complete.
+✔ Service worker generation complete.
+
+Initial chunk files           | Names         |  Raw size | Estimated transfer size
+main.3598d1e38f12f13f.js      | main          | 574.14 kB |               127.82 kB
+polyfills.6d1557addb3f7023.js | polyfills     |  33.54 kB |                10.88 kB
+runtime.b40e76eb0d5cc55b.js   | runtime       | 894 bytes |               518 bytes
+styles.186c8db44232dde1.css   | styles        |  82 bytes |                63 bytes
+
+                              | Initial total | 608.63 kB |               139.27 kB
+
+Build at: 2024-06-03T15:22:07.594Z - Hash: c69feb4d95bc3e69 - Time: 4974ms
+
+Warning: bundle initial exceeded maximum budget. Budget 500.00 kB was not met by 108.63 kB with a total of 608.63 kB.
+
+
+Done in 24.51s.
+Monday, June 3, 2024 11:22:07 AM
+yarn run v1.22.21
+$ ng update
+Using package manager: yarn
+Collecting installed dependencies...
+Found 41 dependencies.
+    We analyzed your package.json, there are some packages to update:
+
+      Name                                    Version                  Command to update
+     -------------------------------------------------------------------------------------
+      @angular-eslint/schematics              17.5.1 -> 18.0.1         ng update @angular-eslint/schematics
+      @angular/cdk                            17.3.10 -> 18.0.1        ng update @angular/cdk
+      @angular/cli                            17.3.7 -> 18.0.2         ng update @angular/cli
+      @angular/core                           17.3.9 -> 18.0.1         ng update @angular/core
+      @angular/material                       17.3.10 -> 18.0.1        ng update @angular/material
+
+    There might be additional packages which don't provide 'ng update' capabilities that are outdated.
+    You can update the additional packages by running the update command of your package manager.
+Done in 11.98s.
+Monday, June 3, 2024 11:22:20 AM
+
+PS C:\Users\kushal\src\angular\mycanary> git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+PS C:\Users\kushal\src\angular\mycanary> git fetch
+remote: Enumerating objects: 824, done.
+remote: Counting objects: 100% (824/824), done.
+remote: Compressing objects: 100% (101/101), done.
+remote: Total 824 (delta 603), reused 782 (delta 561), pack-reused 0
+Receiving objects: 100% (824/824), 327.25 KiB | 8.18 MiB/s, done.
+Resolving deltas: 100% (603/603), completed with 4 local objects.
+From github.com:mycanary/mycanary
+   5894cee..2282a04  master     -> origin/master
+PS C:\Users\kushal\src\angular\mycanary> git status
+On branch master
+Your branch is behind 'origin/master' by 165 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+nothing to commit, working tree clean
+PS C:\Users\kushal\src\angular\mycanary> cd "C:\Users\kushal\src\angular\mycanary\"; date; git status; git pull; date; git status; date;
+
+Monday, June 3, 2024 11:23:44 AM
+On branch master
+Your branch is behind 'origin/master' by 165 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+nothing to commit, working tree clean
+Updating 5894cee..2282a04
+Fast-forward
+ .nx/cache/nx_files.nxt        |  Bin 4036 -> 4036 bytes
+ package.json                  |   42 +-
+ src/app/app.component.spec.ts |   17 +-
+ src/custom-theme.scss         |    8 +-
+ yarn.lock                     | 4000 +++++++++++++++++++++++------------------
+ 5 files changed, 2289 insertions(+), 1778 deletions(-)
+Monday, June 3, 2024 11:23:44 AM
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+Monday, June 3, 2024 11:23:44 AM
+
+PS C:\Users\kushal\src\angular\mycanary> cd "C:\Users\kushal\src\angular\mycanary\"; date; yarn; date; yarn run ng build  --configuration production; date; yarn run ng update; date; yarn run ng update @angular-eslint/schematics @angular/cdk @angular/cli @angular/core @angular/materrial; date;
+
+Monday, June 3, 2024 11:23:56 AM
+yarn install v1.22.21
+[1/4] Resolving packages...
+[2/4] Fetching packages...
+[3/4] Linking dependencies...
+warning " > @angular-eslint/eslint-plugin@18.0.1" has unmet peer dependency "@typescript-eslint/utils@^7.11.0 || ^8.0.0-alpha.20".
+warning "@angular-eslint/eslint-plugin > @angular-eslint/utils@18.0.1" has unmet peer dependency "@typescript-eslint/utils@^7.11.0 || ^8.0.0-alpha.20".
+warning " > @angular-eslint/eslint-plugin-template@18.0.1" has unmet peer dependency "@typescript-eslint/utils@^7.11.0 || ^8.0.0-alpha.20".
+warning " > @angular-eslint/schematics@18.0.1" has unmet peer dependency "@angular-devkit/core@>= 18.0.0 < 19.0.0".
+warning " > @angular-eslint/schematics@18.0.1" has unmet peer dependency "@angular-devkit/schematics@>= 18.0.0 < 19.0.0".
+[4/4] Building fresh packages...
+Done in 48.51s.
+Monday, June 3, 2024 11:24:45 AM
+yarn run v1.22.21
+$ ng build --configuration production
+✔ Browser application bundle generation complete.
+✔ Copying assets complete.
+✔ Index html generation complete.
+✔ Service worker generation complete.
+
+Initial chunk files           | Names         |  Raw size | Estimated transfer size
+main.2787db73d6e9a2a9.js      | main          | 592.59 kB |               131.37 kB
+polyfills.aabb11d287324cf4.js | polyfills     |  34.35 kB |                11.17 kB
+runtime.b40e76eb0d5cc55b.js   | runtime       | 894 bytes |               518 bytes
+styles.186c8db44232dde1.css   | styles        |  82 bytes |                63 bytes
+
+                              | Initial total | 627.92 kB |               143.12 kB
+
+Build at: 2024-06-03T15:25:40.820Z - Hash: 095c32546e3b1789 - Time: 35193ms
+
+Warning: bundle initial exceeded maximum budget. Budget 512.00 kB was not met by 115.92 kB with a total of 627.92 kB.
+
+
+Done in 55.18s.
+Monday, June 3, 2024 11:25:41 AM
+yarn run v1.22.21
+$ ng update
+Using package manager: yarn
+Collecting installed dependencies...
+Found 41 dependencies.
+    We analyzed your package.json and everything seems to be in order. Good work!
+Done in 13.97s.
+Monday, June 3, 2024 11:25:55 AM
+yarn run v1.22.21
+$ ng update @angular-eslint/schematics @angular/cdk @angular/cli @angular/core @angular/materrial
+Using package manager: yarn
+Collecting installed dependencies...
+Found 41 dependencies.
+Package '@angular/materrial' is not a dependency.
+error Command failed with exit code 1.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+Monday, June 3, 2024 11:25:57 AM
+
+PS C:\Users\kushal\src\angular\mycanary> cd "C:\Users\kushal\src\angular\mycanary\"; date; yarn; date; yarn run ng build  --configuration production; date; yarn run ng update; date; yarn run ng update @angular-eslint/schematics @angular/cdk @angular/cli @angular/core @angular/material; date;
+
+Monday, June 3, 2024 11:26:05 AM
+yarn install v1.22.21
+[1/4] Resolving packages...
+success Already up-to-date.
+Done in 0.33s.
+Monday, June 3, 2024 11:26:05 AM
+yarn run v1.22.21
+$ ng build --configuration production
+✔ Browser application bundle generation complete.
+✔ Copying assets complete.
+✔ Index html generation complete.
+✔ Service worker generation complete.
+
+Initial chunk files           | Names         |  Raw size | Estimated transfer size
+main.2787db73d6e9a2a9.js      | main          | 592.59 kB |               131.37 kB
+polyfills.aabb11d287324cf4.js | polyfills     |  34.35 kB |                11.17 kB
+runtime.b40e76eb0d5cc55b.js   | runtime       | 894 bytes |               518 bytes
+styles.186c8db44232dde1.css   | styles        |  82 bytes |                63 bytes
+
+                              | Initial total | 627.92 kB |               143.12 kB
+
+Build at: 2024-06-03T15:26:30.151Z - Hash: 095c32546e3b1789 - Time: 5000ms
+
+Warning: bundle initial exceeded maximum budget. Budget 512.00 kB was not met by 115.92 kB with a total of 627.92 kB.
+
+
+Done in 24.08s.
+Monday, June 3, 2024 11:26:30 AM
+yarn run v1.22.21
+$ ng update
+Using package manager: yarn
+Collecting installed dependencies...
+Found 41 dependencies.
+    We analyzed your package.json and everything seems to be in order. Good work!
+Done in 11.35s.
+Monday, June 3, 2024 11:26:41 AM
+yarn run v1.22.21
+$ ng update @angular-eslint/schematics @angular/cdk @angular/cli @angular/core @angular/material
+Using package manager: yarn
+Collecting installed dependencies...
+Found 41 dependencies.
+Fetching dependency metadata from registry...
+Package '@angular-eslint/schematics' is already up to date.
+Package '@angular/cdk' is already up to date.
+Package '@angular/cli' is already up to date.
+Package '@angular/core' is already up to date.
+Package '@angular/material' is already up to date.
+Done in 2.80s.
+Monday, June 3, 2024 11:26:44 AM
+
+PS C:\Users\kushal\src\angular\mycanary> cd "C:\Users\kushal\src\angular\mycanary\"; date; yarn; date; yarn run ng build  --configuration production; date; yarn run ng update; date;
+
+Monday, June 3, 2024 11:27:17 AM
+yarn install v1.22.21
+[1/4] Resolving packages...
+success Already up-to-date.
+Done in 0.32s.
+Monday, June 3, 2024 11:27:17 AM
+yarn run v1.22.21
+$ ng build --configuration production
+✔ Browser application bundle generation complete.
+✔ Copying assets complete.
+✔ Index html generation complete.
+✔ Service worker generation complete.
+
+Initial chunk files           | Names         |  Raw size | Estimated transfer size
+main.2787db73d6e9a2a9.js      | main          | 592.59 kB |               131.37 kB
+polyfills.aabb11d287324cf4.js | polyfills     |  34.35 kB |                11.17 kB
+runtime.b40e76eb0d5cc55b.js   | runtime       | 894 bytes |               518 bytes
+styles.186c8db44232dde1.css   | styles        |  82 bytes |                63 bytes
+
+                              | Initial total | 627.92 kB |               143.12 kB
+
+Build at: 2024-06-03T15:27:38.028Z - Hash: 095c32546e3b1789 - Time: 4448ms
+
+Warning: bundle initial exceeded maximum budget. Budget 512.00 kB was not met by 115.92 kB with a total of 627.92 kB.
+
+
+Done in 20.05s.
+Monday, June 3, 2024 11:27:38 AM
+yarn run v1.22.21
+$ ng update
+Using package manager: yarn
+Collecting installed dependencies...
+Found 41 dependencies.
+    We analyzed your package.json and everything seems to be in order. Good work!
+Done in 10.64s.
+Monday, June 3, 2024 11:27:48 AM
+
+PS C:\Users\kushal\src\angular\mycanary>
+PS C:\Users\kushal\src\angular\mycanary> git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+PS C:\Users\kushal\src\angular\mycanary> yarn install
+yarn install v1.22.21
+[1/4] Resolving packages...
+success Already up-to-date.
+Done in 0.34s.
+PS C:\Users\kushal\src\angular\mycanary> git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+PS C:\Users\kushal\src\angular\mycanary> yarn run ng update @angular/core @angular/cli @angular/material @angular/localize @angular-eslint/schematics
+yarn run v1.22.21
+$ ng update @angular/core @angular/cli @angular/material @angular/localize @angular-eslint/schematics
+Using package manager: yarn
+Collecting installed dependencies...
+Found 41 dependencies.
+Fetching dependency metadata from registry...
+Package '@angular/core' is already up to date.
+Package '@angular/cli' is already up to date.
+Package '@angular/material' is already up to date.
+Package '@angular/localize' is already up to date.
+Package '@angular-eslint/schematics' is already up to date.
+Done in 9.11s.
+PS C:\Users\kushal\src\angular\mycanary> yarn run ng update
+yarn run v1.22.21
+$ ng update
+Using package manager: yarn
+Collecting installed dependencies...
+Found 41 dependencies.
+    We analyzed your package.json and everything seems to be in order. Good work!
+Done in 6.01s.
+PS C:\Users\kushal\src\angular\mycanary>
