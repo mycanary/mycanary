@@ -2,9 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { LoadingService } from '../loading.service';
 
 @Component({
-  selector: 'app-loading',
-  templateUrl: './loading.component.html',
-  styleUrls: ['./loading.component.sass']
+    selector: 'app-loading',
+    templateUrl: './loading.component.html',
+    styleUrls: ['./loading.component.sass'],
+    standalone: false
 })
 export class LoadingComponent implements OnInit {
 
